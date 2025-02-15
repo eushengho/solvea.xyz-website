@@ -51,7 +51,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="bg-white py-16">
+      <section className="bg-[#F0EAD6]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-on-scroll opacity-0 translate-y-10">
             <h2 className="text-3xl font-bold mb-4 text-primary">
