@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { CustomButton } from "@/components/ui/custom-button";
 import { StatCard } from "@/components/ui/stat-card";
@@ -35,14 +34,13 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-muted">
-      {/* Hero Section */}
+    <div className="min-h-screen bg-muted">
       <section className="container mx-auto px-4 pt-20 pb-16 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-up">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-up text-primary">
             Never Miss a Technical Question Again
           </h1>
-          <p className="text-xl text-secondary mb-8 animate-fade-up">
+          <p className="text-xl text-black mb-8 animate-fade-up">
             Transform your pre-sales conversations with an AI co-pilot that makes every team member your best performer.
           </p>
           <CustomButton
@@ -55,14 +53,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Social Proof Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-on-scroll opacity-0 translate-y-10">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-3xl font-bold mb-4 text-primary">
               Battle-tested by Industry Leaders
             </h2>
-            <p className="text-secondary max-w-2xl mx-auto">
+            <p className="text-black max-w-2xl mx-auto">
               Built by former QuantumBlack / McKinsey technical consultants
             </p>
           </div>
@@ -86,10 +83,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16">
+      <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 animate-on-scroll opacity-0 translate-y-10">
+          <h2 className="text-3xl font-bold text-center mb-12 animate-on-scroll opacity-0 translate-y-10 text-primary">
             Turn Every Call into a Technical Win
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -117,31 +113,29 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-on-scroll opacity-0 translate-y-10">
             <div className="text-primary mb-6">
               <CheckCircle className="h-12 w-12 mx-auto" />
             </div>
-            <blockquote className="text-2xl font-medium mb-6">
+            <blockquote className="text-2xl font-medium mb-6 text-black">
               "We've seen a 40% reduction in technical follow-ups and shorter sales cycles"
             </blockquote>
-            <cite className="text-secondary not-italic">
+            <cite className="text-black not-italic">
               - Technical Sales Leader, Enterprise AI Company
             </cite>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="contact" className="py-16">
+      <section id="contact" className="py-16 bg-muted">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto animate-on-scroll opacity-0 translate-y-10">
-            <h2 className="text-3xl font-bold mb-6">
+            <h2 className="text-3xl font-bold mb-6 text-primary">
               Ready to Supercharge Your Technical Sales?
             </h2>
-            <p className="text-xl text-secondary mb-8">
+            <p className="text-xl text-black mb-8">
               Book a 30-minute call to see how CoAgent can transform your pre-sales process.
             </p>
             <CustomButton size="lg" onClick={() => window.open("#", "_blank")}>
