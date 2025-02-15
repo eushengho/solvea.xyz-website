@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { CustomButton } from "@/components/ui/custom-button";
 import { StatCard } from "@/components/ui/stat-card";
@@ -26,15 +27,12 @@ const Index = () => {
     return () => observer.disconnect();
   }, []);
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
+  const openCalendly = () => {
+    window.open("https://calendly.com/eushengho/catchup", "_blank");
   };
 
   return (
-    <div className="min-h-screen bg-muted">
+    <div className="min-h-screen bg-[#F0EAD6]">
       <section className="container mx-auto px-4 pt-20 pb-16 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-up text-primary">
@@ -45,7 +43,7 @@ const Index = () => {
           </p>
           <CustomButton
             size="lg"
-            onClick={scrollToContact}
+            onClick={openCalendly}
             className="animate-fade-up"
           >
             Speak to a Founder Now <ArrowRight className="ml-2 h-5 w-5" />
@@ -59,31 +57,25 @@ const Index = () => {
             <h2 className="text-3xl font-bold mb-4 text-primary">
               Battle-tested by Industry Leaders
             </h2>
-            <p className="text-black max-w-2xl mx-auto">
+            <p className="text-black max-w-2xl mx-auto mb-12">
               Built by former QuantumBlack / McKinsey technical consultants
             </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <StatCard
-              title="Faster Ramp-up"
-              value="60%"
-              className="animate-on-scroll opacity-0 translate-y-10"
-            />
-            <StatCard
-              title="Fewer Follow-ups"
-              value="35%"
-              className="animate-on-scroll opacity-0 translate-y-10"
-            />
-            <StatCard
-              title="Higher Win Rates"
-              value="25%"
-              className="animate-on-scroll opacity-0 translate-y-10"
-            />
+            <div className="max-w-3xl mx-auto text-center animate-on-scroll opacity-0 translate-y-10">
+              <div className="text-primary mb-6">
+                <CheckCircle className="h-12 w-12 mx-auto" />
+              </div>
+              <blockquote className="text-2xl font-medium mb-6 text-black">
+                "We've seen a 40% reduction in technical follow-ups and shorter sales cycles"
+              </blockquote>
+              <cite className="text-black not-italic">
+                - Technical Sales Leader, Enterprise AI Company
+              </cite>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-muted">
+      <section className="py-16 bg-[#F0EAD6]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 animate-on-scroll opacity-0 translate-y-10 text-primary">
             Turn Every Call into a Technical Win
@@ -113,23 +105,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center animate-on-scroll opacity-0 translate-y-10">
-            <div className="text-primary mb-6">
-              <CheckCircle className="h-12 w-12 mx-auto" />
-            </div>
-            <blockquote className="text-2xl font-medium mb-6 text-black">
-              "We've seen a 40% reduction in technical follow-ups and shorter sales cycles"
-            </blockquote>
-            <cite className="text-black not-italic">
-              - Technical Sales Leader, Enterprise AI Company
-            </cite>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-16 bg-muted">
+      <section id="contact" className="py-16 bg-[#F0EAD6]">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto animate-on-scroll opacity-0 translate-y-10">
             <h2 className="text-3xl font-bold mb-6 text-primary">
@@ -138,7 +114,7 @@ const Index = () => {
             <p className="text-xl text-black mb-8">
               Book a 30-minute call to see how CoAgent can transform your pre-sales process.
             </p>
-            <CustomButton size="lg" onClick={() => window.open("#", "_blank")}>
+            <CustomButton size="lg" onClick={openCalendly}>
               Schedule a Demo with the Founders <Calendar className="ml-2 h-5 w-5" />
             </CustomButton>
           </div>
