@@ -32,10 +32,10 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F0EAD6]">
+    <div className="min-h-screen bg-white">
       <section className="container mx-auto px-4 pt-20 pb-16 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-up text-primary">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-up text-[#25CAFE]">
             Never Miss a Technical Question Again
           </h1>
           <p className="text-xl text-black mb-8 animate-fade-up">
@@ -44,24 +44,24 @@ const Index = () => {
           <CustomButton
             size="lg"
             onClick={openCalendly}
-            className="animate-fade-up"
+            className="animate-fade-up bg-[#fe5925] hover:bg-[#fe5925]/90"
           >
             Speak to a Founder Now <ArrowRight className="ml-2 h-5 w-5" />
           </CustomButton>
         </div>
       </section>
 
-      <section className="bg-[#F0EAD6]">
+      <section className="bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-on-scroll opacity-0 translate-y-10">
-            <h2 className="text-3xl font-bold mb-4 text-primary">
+            <h2 className="text-3xl font-bold mb-4 text-[#25CAFE]">
               Battle-tested by Industry Leaders
             </h2>
             <p className="text-black max-w-2xl mx-auto mb-12">
               Built by former QuantumBlack / McKinsey technical consultants
             </p>
             <div className="max-w-3xl mx-auto text-center animate-on-scroll opacity-0 translate-y-10">
-              <div className="text-primary mb-6">
+              <div className="text-[#25CAFE] mb-6">
                 <CheckCircle className="h-12 w-12 mx-auto" />
               </div>
               <blockquote className="text-2xl font-medium mb-6 text-black">
@@ -75,46 +75,46 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-[#F0EAD6]">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 animate-on-scroll opacity-0 translate-y-10 text-primary">
+          <h2 className="text-3xl font-bold text-center mb-12 animate-on-scroll opacity-0 translate-y-10 text-[#25CAFE]">
             Turn Every Call into a Technical Win
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <FeatureCard
               title="Real-time Confidence"
               description="Answer complex technical questions in real-time with confidence"
-              className="animate-on-scroll opacity-0 translate-y-10"
+              className="animate-on-scroll opacity-0 translate-y-10 shadow-rainbow"
             />
             <FeatureCard
               title="Team Knowledge"
               description="Capture and leverage winning responses across your entire team"
-              className="animate-on-scroll opacity-0 translate-y-10"
+              className="animate-on-scroll opacity-0 translate-y-10 shadow-rainbow"
             />
             <FeatureCard
               title="Stay Updated"
               description="Automatically identify knowledge gaps and update stale information"
-              className="animate-on-scroll opacity-0 translate-y-10"
+              className="animate-on-scroll opacity-0 translate-y-10 shadow-rainbow"
             />
             <FeatureCard
               title="Team Growth"
               description="Upskill your team with insights from top performers"
-              className="animate-on-scroll opacity-0 translate-y-10"
+              className="animate-on-scroll opacity-0 translate-y-10 shadow-rainbow"
             />
           </div>
         </div>
       </section>
 
-      <section id="contact" className="py-16 bg-[#F0EAD6]">
+      <section id="contact" className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto animate-on-scroll opacity-0 translate-y-10">
-            <h2 className="text-3xl font-bold mb-6 text-primary">
+            <h2 className="text-3xl font-bold mb-6 text-[#25CAFE]">
               Ready to Supercharge Your Technical Sales?
             </h2>
             <p className="text-xl text-black mb-8">
               Book a 30-minute call to see how CoAgent can transform your pre-sales process.
             </p>
-            <CustomButton size="lg" onClick={openCalendly}>
+            <CustomButton size="lg" onClick={openCalendly} className="bg-[#fe5925] hover:bg-[#fe5925]/90">
               Schedule a Demo with the Founders <Calendar className="ml-2 h-5 w-5" />
             </CustomButton>
           </div>
